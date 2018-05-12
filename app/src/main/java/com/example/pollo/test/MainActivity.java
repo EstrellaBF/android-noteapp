@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Se ejecutará codigo al dar click
-                textView.setText("Este texto se cambiará al hacer click");
+                textView.setText("Este texto se cambiará");
             }
         });
     }
