@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Se ejecutará codigo al dar click
-                textView.setText("Este texto se cambiará");
+                textView.setText("Se cambiará este texto");
             }
         });
     }
