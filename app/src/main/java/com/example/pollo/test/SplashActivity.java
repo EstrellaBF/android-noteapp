@@ -9,6 +9,8 @@ import java.util.TimerTask;
 
 public class SplashActivity extends AppCompatActivity {
 
+    // Definir una variable para splashActivity para que no genere carga pesada
+    private static final long SPLASH_SCREEN_DELAY = 2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,6 @@ public class SplashActivity extends AppCompatActivity {
 
         Timer timer = new Timer();
         // Ejecutando timer
-        timer.schedule(timerTask,3000);
+        timer.schedule(timerTask,SPLASH_SCREEN_DELAY);
     }
 }
