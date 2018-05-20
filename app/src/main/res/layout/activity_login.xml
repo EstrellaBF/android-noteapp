@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background"
     tools:context=".Activities.LoginActivity">
 
     <TextView
-        android:text="Login Activity"
-        android:layout_width="wrap_content"
+        android:text="THIS IS MY FIRST APP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_big"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+    <EditText
+        android:id="@+id/username"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/register-button"
+        android:text="REGISTER"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/firstbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/login-button"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/secondbutton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-</android.support.constraint.ConstraintLayout>
+
+</android.widget.LinearLayout>
